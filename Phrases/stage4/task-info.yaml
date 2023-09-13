@@ -1,0 +1,16 @@
+type: edu
+files:
+- name: src/test/java/org/hyperskill/phrases/internals/PhrasesUnitTest.kt
+  visible: false
+- name: src/test/java/org/hyperskill/phrases/internals/AbstractUnitTest.kt
+  visible: false
+- name: src/test/java/org/hyperskill/phrases/Stage4UnitTest.kt
+  visible: false
+- name: build.gradle
+  visible: false
+- name: src/test/java/org/hyperskill/phrases/internals/CustomAsyncDifferConfigShadow.java
+  visible: false
+- name: src/test/java/org/hyperskill/phrases/Stage2BUnitTest.kt
+  visible: false
+- name: src/test/java/org/hyperskill/phrases/Stage3UnitTest.kt
+  visible: false

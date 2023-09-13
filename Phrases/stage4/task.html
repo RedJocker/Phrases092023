@@ -1,0 +1,30 @@
+<h2>Description </h2>
+
+<p>We need to keep new phrases somewhere to have a stack to choose from. In this stage, you need to adjust your app using Room to store the phrases in a database.</p>
+
+<h2>Objectives</h2>
+
+<ol>
+	<li>Create an <code>entity</code> named <code>Phrase</code> for your phrases with the <code>id</code>  and <code>phrase</code> as properties;</li>
+	<li>Create the <code>AppDatabase</code> class based on a <code>RoomDatabase</code>;</li>
+	<li>Don't use static methods to provide database instance to consumer code. Junit does not re-instantiate static variables and using the singleton pattern will not work properly with tests. Instead use an application class to instantiate the database and provide it to consumer code, like was shown on Room topic.</li>
+	<li>Create a <code>DAO</code> object named <code>PhraseDao</code>  and define methods as  <code>insert</code>, <code>delete</code>, <code>get</code>, and <code>getAll</code> phrases from your database;</li>
+	<li>The database name should be <code>"phrases.db"</code> and the table name should be <code>"phrases"</code>;</li>
+	<li>Update your previous code so that your <code>RecyclerView</code> shows the phrases from the database;</li>
+	<li>When <code>addButton</code> is clicked show a dialog that will be used to insert more phrases in the database. Add an <code>EditText</code> with id <code>"editText"</code> to the dialog that will be used to insert the phrase to be added;</li>
+	<li>Don't forget to update your <code>RecyclerView</code>: new phrases should pop up immediately!;</li>
+	<li>Update your previous code so that the <code>Delete</code> <code>TextView</code> deletes the phrase from the screen and the database;</li>
+	<li>Update your previous code so that your notifications take phrases from the database, not from the old list; </li>
+	<li>Make sure you cannot set reminders with the empty database. If users try to set a reminder without phrases, show a <code>Toast</code> with an error message and set the <code>reminderTv.text</code> to <code>No reminder set</code>;</li>
+	<li>If after a deletion the database gets empty no reminders should be set and existing ones should be canceled;</li>
+</ol>
+
+<h2>Examples</h2>
+
+<p><strong>Example 1:</strong> <em>clicking on the addButton</em></p>
+
+<p><img alt="android reminder alert dialog" height="923" name="Screenshot_1666648863.png" src="https://ucarecdn.com/3c481e25-1191-47bb-871c-882e70fdb689/" width="426"></p>
+
+<p><strong>Example 2:</strong> <em>adding a new phrase</em></p>
+
+<p><img alt="android reminder item list" height="928" name="Screenshot_1666649188.png" src="https://ucarecdn.com/8b08fc50-72a0-4051-9c81-63b852b5cbed/" width="428"></p>

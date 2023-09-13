@@ -1,0 +1,28 @@
+<h2>Description </h2>
+
+<p>The whole point of the app is to send you push notifications. Let's make it happen!</p>
+
+<h2>Objectives</h2>
+
+<ol>
+	<li>Create a notification channel for your app. Set the channel id to <code>"org.hyperskill.phrases"</code>;</li>
+	<li>Remember that <code>TextView</code> with <code>No reminders set</code> we've created in the first stage? Set an <code>OnClickListener</code> that shows a <code>TimePicker</code> dialog; we'll use it for setting the notification time;</li>
+	<li>Update the <code>TextView</code> to <code>"Reminder set at $hour:$minute"</code> where <code>$hour</code> and <code>$minute</code> are the hour and minute pick with <code>TimePicker</code>. Display the time using 24h format and always use two digits for <code>$hour</code> and <code>$minute</code>. (exs: "00:00", "09:45", "15:02", "23:59");</li>
+	<li>Get an instance of <code>AlarmManager</code>, set an repeating alarm with the time set and with daily interval and send an explicit intent for a broadcast. If the time picked is before the current day time the alarm should be triggered only the next day. (ex: the current time is 15:00 and the time pick was 10:00);</li>
+	<li>Create a class that extends <code>BroadcastReceiver</code> that will receive the broadcast from the alarm and send notifications when the broadcast is received. Add it to AndroidManifest;</li>
+	<li>Create a notification with id <code>393939</code>, the title <code>Your phrase of the day</code> and a random phrase from your ready-made phrases. That's why we asked you to have at least three phrases;</li>
+</ol>
+
+<h2>Examples</h2>
+
+<p><strong>Example 1:</strong> <em>setting a reminder</em></p>
+
+<p><img alt="android time picker" height="667" name="Screenshot_1666300172.png" src="https://ucarecdn.com/017ab710-e3f9-45fb-950a-be73df9ea369/" width="315"></p>
+
+<p><strong>Example 2:</strong> <em>reminder set</em></p>
+
+<p><img alt="android reminder time set" height="580" name="Screenshot_1666300184.png" src="https://ucarecdn.com/0d304abf-cd24-4f37-88fd-0c3ed071195c/" width="315"></p>
+
+<p><strong>Example 3:</strong> <em>push notification received</em></p>
+
+<p><img alt="android push notification" height="661" name="Screenshot_1666300190.png" src="https://ucarecdn.com/c77dd827-92aa-4fdc-80e2-dcca486f63c7/" width="315"></p>
